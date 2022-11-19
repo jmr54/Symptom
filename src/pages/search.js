@@ -5,9 +5,11 @@ import Axios from 'axios'
 import '../App.css'
 
 const Search = () => {
+
 // Using state to keep track of what the selected data is
 let [data, setData] = useState("")
 let [url, setUrl] = useState([])
+
 
 // Using this function to update the state of data
 // whenever a new option is selected from the dropdown
@@ -22,21 +24,7 @@ let handleDataChange = (e) => {
   })
 }
 
-/*
-useEffect(() => {
-  // Using fetch to fetch the api from 
-  // flask server it will be redirected to proxy
-  fetch('https://health.gov/myhealthfinder/api/v3/topicsearch.json?keyword=Heart').then((res) =>
-      res.json().then((data) => {
-          // Setting a data from api
-          setUrl({
-              name: data.Name,
-          });
-      })
-  );
-}, []);
 
-*/
 
 const getAPI = () => {
   Axios.get(`https://health.gov/myhealthfinder/api/v3/topicsearch.json?keyword=${data}`).then (
@@ -50,7 +38,7 @@ const getAPI = () => {
     <div className="App">
     <form>
     <select onChange={handleDataChange} className="Form"> 
-      <option value=""> -- Select a Category -- </option>
+      <option value=""> -- Select a Category/All -- </option>
       {Data.map((datas) => <option key={datas.id}>{datas.title}</option>)}
     </select>  
     </form>    

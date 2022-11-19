@@ -1,20 +1,20 @@
-from flask import Flask, request, jsonify, session, abort
-from flask_session import Session
+from flask import Flask, request, jsonify, session
 from flask_bcrypt import Bcrypt
 from flask_cors import CORS, cross_origin
+from flask_session import Session
 from config import ApplicationConfig
 from models import db, User
 
 app = Flask(__name__)
 app.config.from_object(ApplicationConfig)
-bcrypt = Bcrypt(app)
-server_session = Session(app)
 
+bcrypt = Bcrypt(app)
+CORS(app, supports_credentials=True)
+server_session = Session(app)
 db.init_app(app)
 
 with app.app_context():
     db.create_all()
-
 
 @app.route("/@me")
 def get_current_user():
@@ -29,7 +29,7 @@ def get_current_user():
         "email": user.email
     }) 
 
-@app.route("/register", methods =["POST"])
+@app.route("/register", methods=["POST"])
 def register_user():
     email = request.json["email"]
     password = request.json["password"]
@@ -71,6 +71,14 @@ def login_user():
         "email": user.email
     })
 
-    
+@app.route("/logout", methods=["POST"])
+def logout_user():
+    session.pop("user_id")
+    return "200"
+
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)

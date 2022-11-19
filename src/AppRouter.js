@@ -10,6 +10,8 @@ import Form from 'react-bootstrap/Form';
 import HomePage from './pages/homepage'
 import Search from './pages/search'
 import Profile from './pages/profile'
+import Login from './pages/login'
+import Register from './pages/register'
 
 import './App.css'
 
@@ -26,7 +28,8 @@ const AppRouter = () => {
             <Nav.Link as={Link} to ="/profile">Profile</Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Button variant="outline-success">Log in</Button>
+            <Button variant="outline-success"as={Link} to ="/login">Log in</Button>
+            <Button variant="outline-success"as={Link} to ="/register">Register</Button>
           </Form>
         </Container>
       </Navbar>
@@ -35,6 +38,8 @@ const AppRouter = () => {
             < Route path="/" element={<HomePage/>} />
             < Route path="/search" element={<Search/>} />
             < Route path="/profile" element={<Profile/>} />
+            < Route path="/login" element={<Login/>} />
+            < Route path="/register" element={<Register/>} />
         </Routes>
         </div>
     </BrowserRouter>
