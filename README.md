@@ -1,70 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Home page is shown below. This allows users to look at common health issues with a article link attached regarding that issue. Users can also click on the button to see a different issue with a different article link. 
+<img width="1280" alt="Screenshot_20230220_012642" src="https://user-images.githubusercontent.com/67990368/224129897-67d4bf82-0f75-41ec-90da-78b094c8bbf1.png">
+The page below shows the log in page. Since I did not find a database I can host, it is not availble but works with a local database.
+<img width="1279" alt="Screenshot_20230220_012706" src="https://user-images.githubusercontent.com/67990368/224130173-17edd744-35a9-48bf-a791-e01ed5d467dc.png">
+This page below shows what the profile page looks like after logging in. Users can add their symptoms and the date that it occurs. It will save them and users can go back and look into their previous post. 
+<img width="1277" alt="Screenshot_20230220_012732" src="https://user-images.githubusercontent.com/67990368/224130359-31c53403-abb7-41cb-b0cf-24ff243c8666.png">
+This page below shows them the article page. Users can look at a dropdown bar and look for certains symptoms. If the users click on that symptom, it will populate different articles regarding that symptoms. Users can click on the link to look at the the article. 
+<img width="1280" alt="Screenshot_20230220_012754" src="https://user-images.githubusercontent.com/67990368/224130487-dd0428c9-69a8-4200-a0d5-64dc96672a3c.png">
